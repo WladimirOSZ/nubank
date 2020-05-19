@@ -1,25 +1,19 @@
 import {StyleSheet} from 'react-native';
+import styled from 'styled-components';//Import do "css"
 
-export default styles = StyleSheet.create({
-    container: {
-        height:100,
-        marginTop:20,
-    },
-    tabsContainer: {
-        paddingLeft:10,
-        paddingRight:20,
-    },
-    tabItem: {
-        width: 100,
-        height:100,
-        backgroundColor:'rgba(255,255,255,0.2)',
-        borderRadius: 3,
-        marginLeft: 10,
-        padding: 10,
-        justifyContent: 'space-between'
-    },
-    tabText: {
-        color: '#FFF',
-        
-    },
-})
+export const Container = styled.View`
+    height:100px;
+    marginTop:20px;
+`;
+export const TabItem = styled.View`
+    width: 100px;
+    height:100px;
+    background-color:'rgba(255,255,255,0.2)';
+    border-radius: 3px;
+    margin-left: 10px;
+    padding: 10px;
+    justify-content: space-between;
+`;
+export const TabText = styled.Text`
+    color: #FFF;
+`;
